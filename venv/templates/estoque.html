@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estoque</title>
+</head>
+<body>
+<form method="POST" action="/Estoque">
+    <input type="hidden" name="proxima" value="{{ proxima or url_for('table') }}">
+    <input type="number" name="codigo"  placeholder="Codigo produto"/>
+    <input type="text" name="descricao" placeholder="descri produto" required/>
+    <input type="text" name="tipo" placeholder="type descont" required/>
+    <input type="number" name="loja"  placeholder="Loja"/>
+    <input type="submit">
+</form>
+</body>
+</html>
